@@ -62,8 +62,10 @@
   "message": "회원 정보 조회 완료",
   "data": {
     "user_id": "dlwlrma",
-    "refund": 0,
-    "refund_history": ""
+    "refunds": [
+      {"year": "2022", "refund": 1000},
+      {"year": "2021", "refund": 2000}
+    ]
   },
   "error": ""
 }
