@@ -1,8 +1,5 @@
 # 💰 환급액 조회 서비스
-**목표: Rest API 개발 역량 강화**
-
-## 개요
-회원의 예상 환급액을 조회하는 서비스 개발
+**목표: REST API 개발 역량 강화**
 
 ## 기술 스택
 <div align="center">
@@ -14,6 +11,17 @@
 <img src="https://img.shields.io/badge/H2Database-004F9F?style=for-the-badge&logo=H2&logoColor=white">
 <img src="https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
 </div><br>
+
+
+## 개요
+사용자의 근로소득(연간)과 납부세액 입력하면 예상 환급액을 조회하는 서비스 개발
+
+## 원리
+**세액공제액 - 납부세액 > 0 ? 환급액 없음 : 환급액 있음**
+* 근로소득 -> 과세표준
+* 납부세액 -> 기납부세액
+* 산출세액 = 과제표준 * 누진세율
+* 세액공제액 = min(산출세액 공제액, 근로소득 공제 한도)
 
 ## 요구사항
 1. 회원 가입
