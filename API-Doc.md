@@ -16,9 +16,9 @@
 * 엔드포인트: `/signup`
 * 메서드: POST
 * 요청 파라미터
-  * `user_id`
-  * `password`
-  * `email`
+  * `user_id(String)`
+  * `password(String)`
+  * `email(String)`
 * 응답 예시
 ```json
 {
@@ -35,17 +35,15 @@
 * 엔드포인트: `/login`
 * 메서드: POST
 * 요청 파라미터
-  * `user_id`
-  * `password`
+  * `user_id(String)`
+  * `password(String)`
 * 응답 예시
 ```json
 {
   "status": 200,
-  "message": "회원 정보 조회 완료",
+  "message": "로그인 완료",
   "data": {
-    "user_id": "dlwlrma",
-    "refund": 0,
-    "refund_history": ""
+    "user_id": "dlwlrma"
   },
   "error": ""
 }
@@ -75,8 +73,8 @@
 * 엔드포인트: `/find/refund`
 * 메서드: POST
 * 요청 파라미터
-  * salary
-  * tax
+  * `salary(float)`
+  * `tax(float)`
 * 응답 예시
 ```json
 {
