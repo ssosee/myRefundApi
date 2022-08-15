@@ -17,6 +17,10 @@
 사용자의 근로소득(연간)과 납부세액 입력하면 예상 환급액을 조회하는 서비스 개발
 
 ## 원리
+<a href="https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=6596&cntntsId=7875">참고#1</a>
+
+<a href="https://blog.3o3.co.kr/220517-insight/">참고#2</a>
+
 **세액공제액 - 납부세액 > 0 ? 환급액 없음 : 환급액 있음**
 * 근로소득 -> 과세표준
 * 납부세액 -> 기납부세액
@@ -31,7 +35,7 @@
 4. 환급액 조회
    1. 환급액 계산에 필요한 정보를 받으면 환급액을 조회한다.
 
-## 기능
+## [기능](https://github.com/ssosee/myRefundApi/blob/master/API-Doc.md)
 * 회원가입
 * 로그인
 * 회원 정보 조회
