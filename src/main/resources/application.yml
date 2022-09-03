@@ -1,4 +1,4 @@
-#swagger ?? ?????: https://www.inflearn.com/questions/230160
+#swagger 에러사이트 참고: https://www.inflearn.com/questions/230160
 spring:
   mvc:
     pathmatch:
