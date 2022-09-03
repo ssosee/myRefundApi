@@ -19,6 +19,7 @@
   * `user_id(String)`
   * `password(String)`
   * `email(String)`
+  * `phone(String)`
 * 응답 예시
 ```json
 {
