@@ -16,17 +16,17 @@ public class Member {
     @Column(name = "member_id")
     private Long id;
     @Column(length = 20)
-    private String user_id;
+    private String userId;
     @Column(length = 20)
     private String password;
     private String email;
-    @Column(length = 10)
+    @Column(length = 11)
     private String phone;
 
     @Builder
-    public Member(Long id, String user_id, String password, String email, String phone) {
+    public Member(Long id, String userId, String password, String email, String phone) {
         this.id = id;
-        this.user_id = user_id;
+        this.userId = userId;
         this.password = password;
         this.email = email;
         this.phone = phone;
