@@ -1,6 +1,7 @@
 package seaung.myrefundapi.domain.entity;
 
 import lombok.AccessLevel;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -22,4 +23,14 @@ public class Refund {
     private int year;
     private int salary;
     private int tax;
+
+    @Builder
+    public Refund(Long id, Member member, Long refund, int year, int salary, int tax) {
+        this.id = id;
+        this.member = member;
+        this.refund = refund;
+        this.year = year;
+        this.salary = salary;
+        this.tax = tax;
+    }
 }
