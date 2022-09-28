@@ -1,4 +1,4 @@
-package seaung.myrefundapi.api.form;
+package seaung.myrefundapi.domain.service.form;
 
 import lombok.Data;
 

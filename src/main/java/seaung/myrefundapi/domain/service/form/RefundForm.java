@@ -1,9 +1,9 @@
-package seaung.myrefundapi.api.form;
+package seaung.myrefundapi.domain.service.form;
 
 import lombok.Data;
 
 @Data
 public class RefundForm {
     private int year;
-    private String refund;
+    private Long refund;
 }
