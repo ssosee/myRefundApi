@@ -62,8 +62,8 @@
   "data": {
     "user_id": "dlwlrma",
     "refunds": [
-      {"year": "2022", "refund": 1000},
-      {"year": "2021", "refund": 2000}
+      {"year": 2022, "refund": "1,000 원"},
+      {"year": 2021, "refund": "2,000 원"}
     ]
   },
   "error": ""

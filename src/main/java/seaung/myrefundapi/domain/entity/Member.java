@@ -24,8 +24,7 @@ public class Member {
     private String phone;
 
     @Builder
-    public Member(Long id, String userId, String password, String email, String phone) {
-        this.id = id;
+    public Member(String userId, String password, String email, String phone) {
         this.userId = userId;
         this.password = password;
         this.email = email;
