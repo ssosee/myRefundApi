@@ -5,7 +5,6 @@
 <div align="center">
 <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white">
 <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
-<img src="https://img.shields.io/badge/springboot security-6DB33F?style=for-the-badge&logo=SpringSecurity&logoColor=white">
 <img src="https://img.shields.io/badge/jpa-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
 <img src="https://img.shields.io/badge/swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=white">
 <img src="https://img.shields.io/badge/H2Database-004F9F?style=for-the-badge&logo=H2&logoColor=white">
@@ -43,4 +42,26 @@
 
 ## DB(ERD)
 
-![img.png](img.png)
+![DB.png](DB.png)
+
+## 결과
+### Swagger
+주소: http://localhost:8080/swagger-ui.html
+
+![Swagger.png](Swagger.png)
+
+### PostMan
+#### 회원가입
+![회원가입.png](회원가입.png)
+
+#### 로그인
+![로그인.png](로그인.png)
+
+#### 회원정보 조회
+![회원정보_조회.png](회원정보_조회.png)
+
+#### 환급액 조회
+![환급액_조회.png](환급액_조회.png)
+
+#### 로그아웃
+![로그아웃.png](로그아웃.png)

@@ -18,14 +18,14 @@ public class Refund {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id")
     private Member member;
-    private Long refund;
+    private float refund;
     @Column(name = "`year`")
     private int year;
-    private int salary;
-    private int tax;
+    private float salary; //근로소득
+    private float tax; //납부세액
 
     @Builder
-    public Refund(Long id, Member member, Long refund, int year, int salary, int tax) {
+    public Refund(Long id, Member member, float refund, int year, float salary, float tax) {
         this.id = id;
         this.member = member;
         this.refund = refund;

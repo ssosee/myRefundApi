@@ -4,8 +4,8 @@ import lombok.Data;
 
 @Data
 public class ResponseForm {
-    private String status;
-    private String message;
+    private int status;
+    private String message = "";
     private Object data;
-    private String error;
+    private String error = "";
 }
