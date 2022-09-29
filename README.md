@@ -43,4 +43,26 @@
 
 ## DB(ERD)
 
-![img.png](img.png)
+![DB.png](DB.png)
+
+## 결과
+### Swagger
+주소: http://localhost:8080/swagger-ui.html
+
+![Swagger.png](Swagger.png)
+
+### PostMan
+#### 회원가입
+![회원가입.png](회원가입.png)
+
+#### 로그인
+![로그인.png](로그인.png)
+
+#### 회원정보 조회
+![회원정보_조회.png](회원정보_조회.png)
+
+#### 환급액 조회
+![환급액_조회.png](환급액_조회.png)
+
+#### 로그아웃
+![로그아웃.png](로그아웃.png)
