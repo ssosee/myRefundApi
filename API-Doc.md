@@ -50,6 +50,21 @@
 }
 ```
 
+## 로그아웃
+* 엔드포인트: `/logout`
+* 메서드: POST
+* 응답 예시
+```json
+{
+  "status": 200,
+  "message": "로그아웃 완료",
+  "data": {
+    "user_id": "dlwlrma"
+  },
+  "error": ""
+}
+```
+
 ## 회원 정보 조회
 * 엔드포인트: `/myinfo`
 * 메서드: GET
@@ -62,8 +77,8 @@
   "data": {
     "user_id": "dlwlrma",
     "refunds": [
-      {"year": "2022", "refund": 1000},
-      {"year": "2021", "refund": 2000}
+      {"year": 2022, "refund": "1,000 원"},
+      {"year": 2021, "refund": "2,000 원"}
     ]
   },
   "error": ""
