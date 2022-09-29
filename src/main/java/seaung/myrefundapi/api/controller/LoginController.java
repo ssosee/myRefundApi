@@ -99,7 +99,7 @@ public class LoginController {
     }
 
     @GetMapping("/myinfo")
-    public ResponseForm myinfo(HttpServletRequest request) {
+    public ResponseForm myInfo(HttpServletRequest request) {
 
         ResponseForm form = new ResponseForm();
 
