@@ -52,9 +52,7 @@ public class LoginServiceImpl implements LoginService {
     @Override
     public Optional<Member> login(LoginForm loginForm) {
         Optional<Member> loginMember = memberRepository.findFirstByUserIdAndPassword(loginForm.getUserId(), loginForm.getPassword());
-        if(loginMember.isEmpty()) throw new IllegalArgumentException("아이디 또는 비밀번호가 일치하지 않습니다.");
-
-        log.info("로그인 완료");
+        //if(loginMember.isEmpty()) throw new IllegalArgumentException("아이디 또는 비밀번호가 일치하지 않습니다.");
         return loginMember;
     }
 
