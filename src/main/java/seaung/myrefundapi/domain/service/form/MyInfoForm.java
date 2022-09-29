@@ -9,5 +9,5 @@ import java.util.List;
 public class MyInfoForm {
     private String userId;
     @JsonProperty("refunds")
-    private List<RefundForm> refundForm;
+    private List<Refunds> refundForm;
 }

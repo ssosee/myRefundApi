@@ -3,16 +3,16 @@ package seaung.myrefundapi.domain.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import seaung.myrefundapi.domain.entity.Member;
 import seaung.myrefundapi.domain.entity.Refund;
 import seaung.myrefundapi.domain.repository.MemberRepository;
 import seaung.myrefundapi.domain.repository.RefundRepository;
 import seaung.myrefundapi.domain.service.form.LoginForm;
 import seaung.myrefundapi.domain.service.form.MyInfoForm;
-import seaung.myrefundapi.domain.service.form.RefundForm;
+import seaung.myrefundapi.domain.service.form.Refunds;
 import seaung.myrefundapi.domain.service.form.SignupForm;
 
-import java.net.http.HttpClient;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -20,12 +20,14 @@ import java.util.Optional;
 @Slf4j
 @Service
 @RequiredArgsConstructor
+@Transactional(readOnly = true)
 public class LoginServiceImpl implements LoginService {
 
     private final MemberRepository memberRepository;
     private final RefundRepository refundRepository;
 
     @Override
+    @Transactional
     public String signup(SignupForm signupForm) {
 
         validationUserId(signupForm);
@@ -62,10 +64,10 @@ public class LoginServiceImpl implements LoginService {
         List<Refund> refundsByMember = refundRepository.findRefundsByMember(userId);
 
         MyInfoForm myInfoForm = new MyInfoForm();
-        List<RefundForm> refundForms = new ArrayList<>();
+        List<Refunds> refundForms = new ArrayList<>();
         for(Refund r : refundsByMember) {
-            RefundForm refundForm = new RefundForm();
-            refundForm.setRefund(r.getRefund());
+            Refunds refundForm = new Refunds();
+            refundForm.setRefund(String.format("%,d", (int) r.getRefund())+"원");
             refundForm.setYear(r.getYear());
             refundForms.add(refundForm);
         }
