@@ -1,5 +1,5 @@
 # 💰 환급액 조회 서비스
-**목표: REST API 개발 역량 강화**
+**목표: HTTP API 개발 역량 강화**
 
 ## 기술 스택
 <div align="center">
